@@ -1,0 +1,26 @@
+@import 'uikit-vars';
+@import 'dialog';
+@import 'card';
+@import 'hamburger';
+@import 'dropdown';
+@import 'form';
+@import 'images';
+@import 'spinner';
+@import 'buttons';
+@mixin collapsable-column($width, $time, $easing, $direction:'left') {
+    width: $width;
+    transition: width $time $easing;
+    &.closed {
+        #{$direction}: 0;
+        transition: width $time $easing;
+    }
+}
+
+@mixin collapsable-row($width, $time, $easing, $direction:'top') {
+    height: $height;
+    transition: height $time $easing;
+    &.closed {
+        #{$direction}: 0;
+        transition: height $time $easing;
+    }
+}

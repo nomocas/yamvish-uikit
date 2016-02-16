@@ -1,0 +1,63 @@
+// --buddylabel: overflow-image
+
+/**
+ * fixed size img. centered and croped horizontaly by default. for landscape add .landscape on img.
+ * Apply this mixin on img's parent tag selector
+ */
+
+@mixin overflow-image($width, $height) {
+    width: $width;
+    height: $height;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+    img.landscape {
+        max-width: none;
+        max-height: 100%;
+        position: relative;
+    }
+}
+
+
+/** 
+ * full screen centered background image
+ * @example
+ * 	div.my-class { @include image-background-cover(image/bck.png); }
+ * 	<div class="my-class"><div class="content"><div class="inner-content">bla bla</div></div>
+ */
+
+@mixin image-background-cover($url) {
+    background: url($url) no-repeat center center;
+    background-size: cover;
+}
+
+@mixin screen-cell($url:null) {
+    @if $url {
+        background: url($url) no-repeat center center;
+    }
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* content centering styles */
+    & .content {
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+    & .content .inner-content {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+.screen-cell {
+    @include screen-cell;
+}

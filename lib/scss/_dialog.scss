@@ -1,0 +1,33 @@
+.uik-dialog {
+    background: $dialog-background-color;
+    border-radius: $dialog-border-radius;
+    padding: $dialog-padding;
+    margin-bottom: $dialog-margin-bottom;
+    color: #FFF;
+    position: relative;
+    .closed-button {
+        color: #777;
+        font: 14px/100% arial, sans-serif;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #fff;
+        &:after {
+            content: '✖';
+            /* UTF-8 symbol */
+        }
+    }
+    &.error {
+        background: $error-color;
+    }
+    &.success {
+        background: $success-color;
+    }
+    &.warning {
+        background: $warning-color;
+    }
+    &.info {
+        background: $info-color;
+    }
+}

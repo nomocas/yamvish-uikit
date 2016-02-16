@@ -1,0 +1,53 @@
+.card {
+    border-radius: 5px;
+    border: none;
+    &:hover {
+        box-shadow: 0px 0px 8px #aaa;
+    }
+    .card-title {
+        vertical-align: baseline;
+        h2 {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        i {
+            font-size: 22px;
+            position: relative;
+            top: -3px;
+            margin-right: 10px;
+        }
+    }
+    .card-date {
+        font-family: $heading-typo;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 10px;
+        // position: relative;
+        // top: 15px;
+        i {
+            font-size: 16px;
+            position: relative;
+            top: 3px;
+            margin-right: 10px;
+        }
+    }
+    .card-icon-tools {
+        float: right;
+        i {
+            font-size: 20px;
+            margin-left: 15px;
+        }
+    }
+    .card-content {
+        // max-height: 200px;
+        position: absolute;
+        top: 0px;
+        bottom: 54px;
+        overflow: hidden;
+    }
+    .card-footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+    }
+}

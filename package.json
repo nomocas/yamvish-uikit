@@ -1,0 +1,24 @@
+{
+  "name": "yamvish-uikit",
+  "version": "0.0.1",
+  "description": "minimalist uikit for yamvish",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomocas/yamvish-uikit.git"
+  },
+  "keywords": [
+    "uikit",
+    "sass",
+    "yamvish"
+  ],
+  "author": "Gilles Coomans <gilles.coomans@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomocas/yamvish-uikit/issues"
+  },
+  "homepage": "https://github.com/nomocas/yamvish-uikit#readme"
+}

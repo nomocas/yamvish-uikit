@@ -1,6 +1,6 @@
 {
   "name": "yamvish-uikit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "minimalist uikit for yamvish",
   "main": "index.js",
   "scripts": {

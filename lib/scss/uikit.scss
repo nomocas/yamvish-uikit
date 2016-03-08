@@ -1,12 +1,5 @@
-@import 'uikit-vars';
-@import 'dialog';
-@import 'card';
-@import 'hamburger';
-@import 'dropdown';
-@import 'form';
-@import 'images';
-@import 'spinner';
-@import 'buttons';
+@import 'uikit-vars',
+'uikit-components';
 @mixin collapsable-column($width, $time, $easing, $direction:'left') {
     width: $width;
     transition: width $time $easing;

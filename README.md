@@ -1,7 +1,9 @@
 # yamvish-uikit
 
 
-minimalist uikit with associated yamvish API and SASS sources
+minimalist uikit through yamvish templates/API and SASS sources.
+
+CSS pipe : Sass/Bourbon + PostCSS/[Lost](https://github.com/peterramsing/lost)
 
 ## Licence
 

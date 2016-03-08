@@ -1,3 +1,29 @@
+.uik-dialog-background {
+    background-color: #333;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    line-height: 100vh;
+    text-align: center;
+    .uik-dialog {
+        text-align: left;
+        display: inline-block;
+        width: 300px;
+        margin: auto;
+        line-height: normal;
+        h3 {
+            margin-top: 0px;
+        }
+        .icon-button {
+            margin-right: 0px;
+            margin-left: 10px;
+            width: 2.5rem;
+        }
+    }
+}
+
 .uik-dialog {
     background: $dialog-background-color;
     border-radius: $general-border-radius;

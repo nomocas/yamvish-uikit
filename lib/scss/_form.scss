@@ -1,1 +1,62 @@
-
+.formi {
+    .input-field {
+        @include clearfix;
+        margin-bottom: 10px;
+    }
+    input {
+        border: 0;
+        color: #eee;
+        font: inherit;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        transition: background-color .3s;
+        &[type="text"],
+        &[type="password"] {
+            height: 60px;
+            lost-column: 3/4 2 0px;
+            margin-bottom: 1rem;
+            background-color: #3b4148;
+            &:focus,
+            &:hover {
+                background-color: #616D7B;
+            }
+            &.labeled {
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+            }
+        }
+        &[type="submit"] {
+            width: 100%;
+            background-color: #ea4c88;
+            color: #eee;
+            font-weight: bold;
+            text-transform: uppercase;
+            &:focus,
+            &:hover {
+                background-color: #d44179;
+            }
+        }
+    }
+    label,
+    input {
+        border-radius: $general-border-radius;
+        padding: 1rem;
+        color: #eee;
+    }
+    textarea {
+        margin-bottom: 10px;
+    }
+    label {
+        lost-column: 1/4 2 0px;
+        text-align: center;
+        font-size: 15px;
+        height: 60px;
+        background-color: #363b41;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        .fa {
+            line-height: 2;
+        }
+    }
+}

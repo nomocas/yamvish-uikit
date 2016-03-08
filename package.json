@@ -20,5 +20,26 @@
   "bugs": {
     "url": "https://github.com/nomocas/yamvish-uikit/issues"
   },
-  "homepage": "https://github.com/nomocas/yamvish-uikit#readme"
+  "homepage": "https://github.com/nomocas/yamvish-uikit#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "browserify": "~3.36.0",
+    "cssnano": "^3.4.0",
+    "gulp": "~3.9.0",
+    "gulp-changed": "~0.3.0",
+    "gulp-imagemin": "~0.1.5",
+    "gulp-notify": "~1.2.4",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "~2.2.14",
+    "gulp-watch": "^4.3.5",
+    "lost": "^6.6.2",
+    "merge-stream": "^0.1.8",
+    "node-notifier": "^4.4.0",
+    "pretty-hrtime": "~0.2.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "~0.1.1"
+  }
 }

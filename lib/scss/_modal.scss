@@ -1,65 +1,64 @@
-      $dark-gray: #333 !default;
-      $light-gray: #ddd !default;
-      $modal-padding: 3em;
-      $modal-close-color: $light-gray;
-      $modal-background: #fff !default;
-      .modal-close {
-          @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
-          @include size(1.5em);
-          background: $modal-background;
-          cursor: pointer;
-          &:after,
-          &:before {
-              @include position(absolute, 3px 3px 0 50%);
-              @include transform(rotate(45deg));
-              @include size(0.15em 1.5em);
-              background: $modal-close-color;
-              content: '';
-              display: block;
-              margin: -3px 0 0 -1px;
-          }
-          &:hover:after,
-          &:hover:before {
-              background: darken($modal-close-color, 10%);
-          }
-          &:before {
-              @include transform(rotate(-45deg));
-          }
-      }
-      
-      .modali {
-          $base-border-color: #dcdcdc !default;
-          $base-border-radius: $general-border-radius;
-          $base-font-size: 1em !default;
-          $base-line-height: 1.5em !default;
-          $action-color: #477dca !default;
-          $base-font-color: $dark-gray !default;
-          // overlay
-          // @include transition(opacity 0.25s ease);
-          @include position(fixed, 0);
-          background-color: rgba(#000, 0.85);
-          // opacity: 0;
-          padding-top: 0.6em;
-          text-align: left;
-          z-index: 500;
-          overflow: hidden;
-          @include desktop {}
-          .modal-inner {
-              background: $modal-background;
-              border-radius: $base-border-radius;
-              margin-top: 0;
-              margin: auto;
-              max-height: 95%;
-              overflow: auto;
-              padding: $modal-padding / 2;
-              position: relative;
-              width: 95%;
-              @include tablet {
-                  padding: $modal-padding;
-                  width: 60%;
-              }
-              @include desktop {
-                  width: 50%;
-              }
-          }
-      }
+$dark-gray: #333 !default;
+$light-gray: #ddd !default;
+$modal-padding: 3em;
+$modal-close-color: $light-gray;
+$modal-background: #fff !default;
+.modal-close {
+    @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
+    @include size(1.5em);
+    background: $modal-background;
+    cursor: pointer;
+    &:after,
+    &:before {
+        @include position(absolute, 3px 3px 0 50%);
+        @include transform(rotate(45deg));
+        @include size(0.15em 1.5em);
+        background: $modal-close-color;
+        content: '';
+        display: block;
+        margin: -3px 0 0 -1px;
+    }
+    &:hover:after,
+    &:hover:before {
+        background: darken($modal-close-color, 10%);
+    }
+    &:before {
+        @include transform(rotate(-45deg));
+    }
+}
+
+.modali {
+    $base-border-color: #dcdcdc !default;
+    $base-border-radius: $general-border-radius;
+    $base-font-size: 1em !default;
+    $base-line-height: 1.5em !default;
+    $action-color: #477dca !default;
+    $base-font-color: $dark-gray !default;
+    @include position(fixed, 0);
+    background-color: rgba(#000, 0.85);
+    text-align: left;
+    z-index: 500;
+    overflow: hidden;
+    @include desktop {}
+    .modal-inner {
+        background: $modal-background;
+        border-radius: $base-border-radius;
+        margin-top: 0;
+        margin: auto;
+        max-height: 95%;
+        overflow: auto;
+        padding: $modal-padding / 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        @include tablet {
+            padding: $modal-padding;
+            width: 60%;
+        }
+        @include desktop {
+            max-width: 50%;
+        }
+    }
+}

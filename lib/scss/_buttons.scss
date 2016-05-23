@@ -20,16 +20,26 @@ a.rounded-button {
 }
 
 .icon-button {
+    white-space: nowrap;
     padding: 0px .7rem;
-    height: 2rem;
-    width: 2rem;
-    line-height: 2rem;
     text-align: center;
-    border-radius: $general-border-radius;
+    background: none;
+    border: none;
     &.large {
-        height: 3rem;
-        width: 3rem;
         font-size: 2rem;
+    }
+}
+
+.box-button {
+    white-space: nowrap;
+    padding: .8rem 1rem;
+    border-radius: $general-border-radius;
+    border: none;
+    background-color: white;
+    color: #000;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #eee;
     }
 }
 

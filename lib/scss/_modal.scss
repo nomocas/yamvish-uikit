@@ -1,11 +1,11 @@
 $dark-gray: #333 !default;
-$light-gray: #ddd !default;
+$light-gray: darken(#ddd, 20%) !default;
 $modal-padding: 3em;
 $modal-close-color: $light-gray;
 $modal-background: #fff !default;
 .modal-close {
     @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
-    @include size(1.5em);
+    @include size(2rem);
     background: $modal-background;
     cursor: pointer;
     &:after,

@@ -21,10 +21,11 @@ a.rounded-button {
 
 .icon-button {
     white-space: nowrap;
-    padding: 0px .7rem;
+    padding: .7rem .7rem;
     text-align: center;
     background: none;
     border: none;
+    line-height: normal;
     &.large {
         font-size: 2rem;
     }
@@ -32,11 +33,12 @@ a.rounded-button {
 
 .box-button {
     white-space: nowrap;
-    padding: .8rem 1rem;
+    padding: 1rem 1rem;
     border-radius: $general-border-radius;
     border: none;
     background-color: white;
     color: #000;
+    line-height: normal;
     transition: background-color .3s;
     &:hover {
         background-color: #eee;

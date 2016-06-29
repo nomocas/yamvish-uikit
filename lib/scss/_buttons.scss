@@ -1,3 +1,7 @@
+button {
+    border: none;
+}
+
 a.rounded-button {
     font-size: 25px;
     display: inline-block;
@@ -24,7 +28,6 @@ a.rounded-button {
     padding: .7rem .7rem;
     text-align: center;
     background: none;
-    border: none;
     line-height: normal;
     &.large {
         font-size: 2rem;
@@ -35,7 +38,6 @@ a.rounded-button {
     white-space: nowrap;
     padding: 1rem 1rem;
     border-radius: $general-border-radius;
-    border: none;
     background-color: white;
     color: #000;
     line-height: normal;

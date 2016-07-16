@@ -1,128 +1,3 @@
-/*.poster {
-    padding-bottom: 120px;
-    .edit-button {
-        position: fixed;
-        z-index: 380;
-        top: 65px;
-        right: 170px;
-        z-index: 1200;
-    }
-    .poster-items {
-        z-index: 10;
-        position: relative;
-        .poster-item {
-            padding: 15px;
-            position: relative;
-            .poster-item-menu {
-                display: none;
-                position: absolute;
-                z-index: 100;
-                right: 10px;
-                top: 10px;
-            }
-            &:hover {
-                .poster-item-menu {
-                    display: block;
-                }
-            }
-            &.edited-mode {
-                &:hover {
-                    background-color: #555;
-                    border-radius: $general-border-radius;
-                }
-            }
-            &.is-dragging,
-            &.is-dragging:hover {
-                background-color: #777;
-                border-radius: $general-border-radius;
-            }
-        }
-        .empty {
-            min-height: 2rem;
-            background-color: #555;
-            border: 1px dashed #CCC;
-            border-radius: $general-border-radius;
-        }
-        //____________________ ITEMS
-        h1 {
-            margin: 0;
-            color: #24A1D2;
-        }
-        h2 {
-            margin: 0;
-            color: white;
-        }
-        .poster-headline {
-            position: relative;
-            padding-right: 2rem;
-            quotes: "“" "”" "‘" "’";
-            min-width: 2rem;
-            display: inline-block;
-            &:before,
-            &:after {
-                font-size: 3rem;
-                position: absolute;
-                top: -1rem;
-            }
-            &:before {
-                left: 0;
-                content: open-quote;
-                margin-right: 5px;
-            }
-            &:after {
-                content: close-quote;
-                right: 0;
-                margin-left: 10px;
-            }
-            padding-left: 30px;
-            font-family: $heading-typo;
-            font-weight: 300;
-            font-size: 1.3rem;
-        }
-        .poster-text {
-            a {
-                font-family: inherit;
-            }
-        }
-        .poster-media {
-            .poster-image {
-                height: 200px;
-                min-width: 200px;
-                width: 100%;
-                border-radius: $general-border-radius;
-            }
-        }
-    }
-    .poster-content-menu {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        white-space: nowrap;
-        .plus-button {
-            border-radius: $general-border-radius;
-            position: relative;
-            margin-top: 20px;
-            left: 50%;
-            transform: translate(-50%);
-            padding: 1rem;
-            display: block;
-        }
-        .poster-content-menu-panel {
-            background-color: #333;
-            padding: .3rem;
-            border-radius: $general-border-radius;
-            display: inline-block;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            .box-button {
-                padding: 1rem;
-            }
-        }
-    }
-}
-*/
-
 .poster-menu {
     position: relative;
     left: 50%;
@@ -136,6 +11,7 @@
         transform: translate(-50%);
         padding: 1rem;
         display: block;
+        color: #333;
         &:focus,
         &:hover {
             outline: none;
@@ -173,7 +49,8 @@
     position: relative;
     .swapable-fake-node {
         min-height: 20px;
-        background-color: #333;
+        background-color: #eee;
+        border-radius: $general-border-radius;
     }
     .empty {
         min-height: 2rem;
@@ -237,7 +114,7 @@
         }
         &.edited-mode {
             &:hover {
-                background-color: #444;
+                background-color: #eee;
                 border-radius: $general-border-radius;
             }
         }
@@ -253,7 +130,7 @@
         }
         h2 {
             margin: 0;
-            color: white;
+            color: $general-typo-color;
         }
         h1,
         h2 {

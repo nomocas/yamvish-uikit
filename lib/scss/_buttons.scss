@@ -29,6 +29,7 @@ a.rounded-button {
     text-align: center;
     background: none;
     line-height: normal;
+    border-radius: $general-border-radius;
     &.large {
         font-size: 2rem;
     }
@@ -45,6 +46,12 @@ a.rounded-button {
     &:hover {
         background-color: #eee;
     }
+}
+
+.box-button.outlined {
+    background: none;
+    border: 1px solid white;
+    color: #FFF;
 }
 
 
